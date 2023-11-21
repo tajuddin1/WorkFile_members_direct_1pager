@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f6f8;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    max-width: 1020px;
+    margin: auto;
+}
+
+.webpage_content{
+    background-color: #fff;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 30px 100px rgba(38,26,25,.15);
+            box-shadow: 0px 30px 100px rgba(38,26,25,.15);
+}
+
+.header-label {
+    text-align: center;
+    padding: 10px;
+    background: #06174d;
+    color: #fff;
+}
+
+h2.title_s {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+h2.title_l {
+    font-size: 34px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 36px;
+}
+
+
+.webpage_content .row_div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 20px;
+}
+
+.left-slide{
+    width: 50%;
+    padding: 40px;
+    padding-right: 20px;
+}
+.right-slide{
+    width: 50%;
+    padding: 40px;
+    padding-left: 20px;
+}
+
+.left-slide ul {
+    list-style: none;
+}
+.left-slide img {
+    max-width: 377px;
+}
+
+.left-slide ul li{
+    padding: 5px 0;
+}
+
+.left-slide ul li p{
+    font-size: 16px;
+}
+
+.top-content {
+    display: flex;
+}
+
+.image-slide {
+    width: 80px;
+}
+
+.card-description p {
+    font-size: 16px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content-slide {
+    width: calc(100% - 85px);
+    padding-left: 10px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nameAddress {
+    display: flex;
+    gap: 10px;
+}
+
+.imgOfAuthor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nameAddress p {
+    font-size: 14px;
+}
+
+.nameAddress span {
+    font-size: 12px;
+    color: #747474;
+    line-height: 20px;
+}
+
+.card-head p {
+    font-size: 14px;
+}
+
+.accordion {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+    padding: 8px 48px 8px 16px;
+    min-height: 56px;
+    line-height: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after {
+    content: url(img/chevron-right-solid.svg);
+    font-size: 32px;
+    width: 10px;
+    transform: rotate(0deg);
+    position: absolute;
+    right: 16px;
+    transition: 0.4s all;
+}
+.accordion-item-header.active::after {
+    transform: rotate(90deg);
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 16px;
+    line-height: 22px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+                
+}
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 930px) {
+    h2.title_l {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .webpage_content .row_div {
+        flex-direction: column;
+    }
+    .left-slide, .right-slide{
+        width: 100%;
+        padding: 30px !important;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    .header-label p {
+        font-size: 14px;
+    }
+    h2.title_l {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 10px 0;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+
+    h2.title_l {
+        font-size: 20px;
+        line-height: 29px;
+        margin: 10px 0;
+    }
+}
