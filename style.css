@@ -66,9 +66,6 @@ h2.title_l {
 .left-slide ul {
     list-style: none;
 }
-.left-slide img {
-    max-width: 377px;
-}
 
 .left-slide ul li{
     padding: 5px 0;
@@ -83,7 +80,7 @@ h2.title_l {
 }
 
 .image-slide {
-    width: 80px;
+    width: 90px;
 }
 
 .card-description p {
