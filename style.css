@@ -80,7 +80,7 @@ h2.title_l {
 }
 
 .image-slide {
-    width: 90px;
+    width: 110px;
 }
 
 .card-description p {
@@ -95,7 +95,7 @@ h2.title_l {
 }
 
 .content-slide {
-    width: calc(100% - 85px);
+    width: calc(100% - 110px);
     padding-left: 10px;
 }
 .author {
